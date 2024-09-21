@@ -8,10 +8,10 @@ export default function HomePage() {
   return (
     <main>
       testing
-      {/* <Hero />
+      <Hero />
       <Feature />
       <Cta />
-      <Footer /> */}
+      <Footer />
     </main>
   );
 }
