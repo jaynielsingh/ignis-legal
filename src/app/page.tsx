@@ -1,9 +1,16 @@
 import Link from "next/link";
+import Hero from "./_components/hero";
+import Feature from "./_components/features";
+import Cta from "./_components/cta";
+import Footer from "./_components/footer";
 
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      hello
+    <main>
+      <Hero />
+      <Feature />
+      <Cta />
+      <Footer />
     </main>
   );
 }
