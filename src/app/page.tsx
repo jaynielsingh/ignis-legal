@@ -7,10 +7,11 @@ import Footer from "./_components/footer";
 export default function HomePage() {
   return (
     <main>
-      <Hero />
+      testing
+      {/* <Hero />
       <Feature />
       <Cta />
-      <Footer />
+      <Footer /> */}
     </main>
   );
 }
