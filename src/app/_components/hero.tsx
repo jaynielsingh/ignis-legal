@@ -9,7 +9,7 @@ const navigation = [
   { name: "Features", href: "#" },
   { name: "Marketplace", href: "#" },
   { name: "Company", href: "#" },
-  { name: "Log in", href: "#" },
+  // { name: "Log in", href: "#" },
 ];
 
 export default function Example() {
@@ -22,14 +22,14 @@ export default function Example() {
           <div className="px-6 pt-6 lg:max-w-2xl lg:pl-8 lg:pr-0">
             <nav
               aria-label="Global"
-              className="flex items-center justify-between lg:justify-start"
+              className="flex bg-secondary p-5 rounded-full items-center justify-between lg:justify-start"
             >
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+                <span className="sr-only">Ignis Legal</span>
                 <img
-                  alt="Your Company"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
-                  className="h-8 w-auto"
+                  alt="Ignis Legal"
+                  src="https://utfs.io/f/V1WyRDrhdbmHOLh4JgQ0EI3MBqPR15QXco7SgkJmA4dpx0zN"
+                  className="h-8 w-auto rounded-full"
                 />
               </a>
               <button
@@ -38,14 +38,14 @@ export default function Example() {
                 className="-m-2.5 rounded-md p-2.5 text-gray-700 lg:hidden"
               >
                 <span className="sr-only">Open main menu</span>
-                <Bars3Icon aria-hidden="true" className="h-6 w-6" />
+                <Bars3Icon aria-hidden="true" className="h-6 w-6 text-white" />
               </button>
               <div className="hidden lg:ml-12 lg:flex lg:gap-x-14">
                 {navigation.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-sm font-semibold leading-6 text-gray-900"
+                    className="text-sm font-semibold leading-6 text-white"
                   >
                     {item.name}
                   </a>
@@ -60,46 +60,46 @@ export default function Example() {
           className="lg:hidden"
         >
           <div className="fixed inset-0 z-50" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-secondary px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+                <span className="sr-only">Ignis Legal</span>
                 <img
                   alt=""
-                  src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
-                  className="h-8 w-auto"
+                  src="https://utfs.io/f/V1WyRDrhdbmHWhJg2vTnphqXFHZNyriDaRL8KTg4MA0PE32c"
+                  className="h-8 w-auto rounded-full"
                 />
               </a>
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                className="-m-2.5 rounded-md p-2.5 text-white"
               >
                 <span className="sr-only">Close menu</span>
                 <XMarkIcon aria-hidden="true" className="h-6 w-6" />
               </button>
             </div>
             <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
+              <div className="-my-6 divide-y ">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-primary"
                     >
                       {item.name}
                     </a>
                   ))}
                 </div>
-                <div className="py-6">
+                {/* <div className="py-6">
                   <a
                     href="#"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Log in
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </DialogPanel>
@@ -120,12 +120,12 @@ export default function Example() {
 
             <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                <h1 className="text-4xl font-serif font-bold tracking-tight text-gray-900 sm:text-6xl">
                   Professional Websites Built for Legal Success
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-gray-600">
+                <p className="mt-6 text-lg font-serif leading-8 text-gray-600">
                   At{" "}
-                  <span className="font-serif text-blue-700 text-2xl font-bold italic">
+                  <span className="font-serif text-secondary text-2xl font-bold italic">
                     Ignis Legal
                   </span>
                   , we focus on creating visually appealing and SEO-optimized
@@ -134,7 +134,7 @@ export default function Example() {
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
                     href="#"
-                    className="rounded-md bg-blue-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                    className="rounded-md bg-tertiary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Get started
                   </a>

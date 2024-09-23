@@ -6,8 +6,7 @@ import Footer from "./_components/footer";
 
 export default function HomePage() {
   return (
-    <main>
-      testing
+    <main className="m-3">
       <Hero />
       <Feature />
       <Cta />
