@@ -14,12 +14,18 @@
 */
 export default function Example() {
   return (
-    <div className="relative bg-offWhite py-16">
-      <div aria-hidden="true" className="absolute inset-x-0 top-0 hidden h-1/2 bg-offWhite lg:block" />
+    <div className="relative capitalize font-serif bg-offWhite py-16">
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 top-0 hidden h-1/2 bg-offWhite lg:block"
+      />
       <div className="mx-auto max-w-7xl bg-indigo-600 lg:bg-transparent lg:px-8">
         <div className="lg:grid lg:grid-cols-12">
           <div className="relative z-10 lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:bg-transparent lg:py-16">
-            <div aria-hidden="true" className="absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden" />
+            <div
+              aria-hidden="true"
+              className="absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden"
+            />
             <div className="mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-none lg:p-0">
               <div className="aspect-h-6 aspect-w-10 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-w-1">
                 <img
@@ -32,7 +38,10 @@ export default function Example() {
           </div>
 
           <div className="relative bg-deepBlue lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-10 lg:items-center lg:rounded-3xl">
-            <div aria-hidden="true" className="absolute inset-0 hidden overflow-hidden rounded-3xl lg:block">
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 hidden overflow-hidden rounded-3xl lg:block"
+            >
               <svg
                 fill="none"
                 width={404}
@@ -50,10 +59,21 @@ export default function Example() {
                     height={20}
                     patternUnits="userSpaceOnUse"
                   >
-                    <rect x={0} y={0} fill="currentColor" width={4} height={4} className="text-indigo-500" />
+                    <rect
+                      x={0}
+                      y={0}
+                      fill="currentColor"
+                      width={4}
+                      height={4}
+                      className="text-indigo-500"
+                    />
                   </pattern>
                 </defs>
-                <rect fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" width={404} height={384} />
+                <rect
+                  fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"
+                  width={404}
+                  height={384}
+                />
               </svg>
               <svg
                 fill="none"
@@ -72,30 +92,45 @@ export default function Example() {
                     height={20}
                     patternUnits="userSpaceOnUse"
                   >
-                    <rect x={0} y={0} fill="currentColor" width={4} height={4} className="text-indigo-500" />
+                    <rect
+                      x={0}
+                      y={0}
+                      fill="currentColor"
+                      width={4}
+                      height={4}
+                      className="text-indigo-500"
+                    />
                   </pattern>
                 </defs>
-                <rect fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" width={404} height={384} />
+                <rect
+                  fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"
+                  width={404}
+                  height={384}
+                />
               </svg>
             </div>
             <div className="relative mx-auto max-w-md space-y-6 px-6 py-12 sm:max-w-3xl sm:py-16 lg:col-span-6 lg:col-start-4 lg:max-w-none lg:p-0">
-              <h2 id="join-heading" className="text-3xl font-bold tracking-tight text-offWhite">
-                Join our team
+              <h2
+                id="join-heading"
+                className="text-3xl font-bold tracking-tight text-offWhite"
+              >
+                Struggling with an outdated website that doesn’t reflect your
+                expertise?
               </h2>
               <p className="text-lg text-offWhite">
-                Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus
-                dui laoreet diam sed lacus, fames.
+                Legal Web designs modern, responsive websites that showcase your
+                skills and attract potential clients.
               </p>
               <a
                 href="#"
-                className="block w-full rounded-md border border-transparent bg-warmGold px-5 py-3 text-center text-base font-medium text-offWhite shadow-md hover:bg-coolGray sm:inline-block sm:w-auto"
+                className="block w-full rounded-md border border-transparent bg-warmGold px-5 py-3 text-center text-base font-medium text-offWhite shadow-md hover:bg-lightBlue hover:text-coolGray sm:inline-block sm:w-auto"
               >
-                Explore open positions
+                Inquire about a project
               </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }

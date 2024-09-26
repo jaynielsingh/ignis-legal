@@ -16,7 +16,7 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-blue-950">
+    <div className="bg-blue-950 capitalize font-serif">
       <header className="absolute inset-x-0 top-0 z-50">
         <div className="mx-auto max-w-7xl">
           <div className="px-6 pt-6 lg:max-w-2xl lg:pl-8 lg:pr-0">
@@ -136,7 +136,7 @@ export default function Example() {
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
                     href="#"
-                    className="bg-warmGold text-lightBlue hover:bg-deepBlue hover:border-warmGold focus-visible:outline-coolGray rounded-md px-3.5 py-2.5 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                    className="bg-warmGold text-lightBlue hover:bg-lightBlue hover:text-coolGray hover:border-warmGold focus-visible:outline-coolGray rounded-md px-3.5 py-2.5 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                   >
                     Get started
                   </a>
