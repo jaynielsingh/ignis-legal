@@ -2,43 +2,42 @@ import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from
 
 const features = [
   {
-    name: 'Push to deploy',
+    name: 'Branding And Logo Design',
     description:
-      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
+      'Create a custom logo and branding for your website.  This will help you stand out from the competition and make your website memorable.',
     icon: CloudArrowUpIcon,
   },
   {
-    name: 'SSL certificates',
+    name: 'Custom website design',
     description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
+      'Create a custom website design that is tailored to your brand and meets your specific needs, including a responsive layout, easy navigation, and a modern and visually appealing design.',
     icon: LockClosedIcon,
   },
   {
-    name: 'Simple queues',
+    name: 'Domain & Hosting',
     description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
+      'Host your website on a reliable and secure domain name provider.  This will ensure that your website is accessible and secure from the internet.',
     icon: ArrowPathIcon,
   },
   {
-    name: 'Advanced security',
+    name: ' Digital Marketing  ',
     description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+      'Leverage digital marketing strategies to promote your website and increase traffic.  This will help you reach a wider audience and drive more traffic to your website.',
     icon: FingerPrintIcon,
   },
 ]
 
 export default function Example() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-lightBlue py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-secondary">Deploy faster</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Everything you need to deploy your app
+          <h2 className="text-base font-semibold leading-7 text-deepBlue">Why Ignis Legal?</h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight capitalize text-gray-900 sm:text-4xl">
+            Elevate your digital footprint with next gen technology.
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
-            pulvinar et feugiat blandit at. In mi viverra elit nunc.
+            Say goodbye to outdated wordpress websites and say hello to Ignis Legal.  We leverage the latest web technologies to help you build your next project.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
@@ -46,7 +45,7 @@ export default function Example() {
             {features.map((feature) => (
               <div key={feature.name} className="relative pl-16">
                 <dt className="text-base font-semibold leading-7 text-gray-900">
-                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-warmGold">
                     <feature.icon aria-hidden="true" className="h-6 w-6 text-white" />
                   </div>
                   {feature.name}

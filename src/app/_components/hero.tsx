@@ -5,10 +5,10 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "Features", href: "/features" },
+  { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
   // { name: "Log in", href: "#" },
 ];
 
@@ -16,20 +16,20 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-slate-100">
+    <div className="bg-blue-950">
       <header className="absolute inset-x-0 top-0 z-50">
         <div className="mx-auto max-w-7xl">
           <div className="px-6 pt-6 lg:max-w-2xl lg:pl-8 lg:pr-0">
             <nav
               aria-label="Global"
-              className="flex bg-secondary p-5 rounded-full items-center justify-between lg:justify-start"
+              className=" flex items-center justify-between rounded-full p-5 lg:justify-start"
             >
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Ignis Legal</span>
                 <img
                   alt="Ignis Legal"
-                  src="https://utfs.io/f/V1WyRDrhdbmHOLh4JgQ0EI3MBqPR15QXco7SgkJmA4dpx0zN"
-                  className="h-8 w-auto rounded-full"
+                  src="https://utfs.io/f/V1WyRDrhdbmHy0p4DJsRcbA5TP8as2XCEUK0MSrZpfvheltn"
+                  className="rounded-full sm:h-20 w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 xl:h-40 xl:w-40"
                 />
               </a>
               <button
@@ -45,7 +45,7 @@ export default function Example() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-sm font-semibold leading-6 text-white"
+                    className="text-offWhite text-sm font-semibold leading-6"
                   >
                     {item.name}
                   </a>
@@ -60,13 +60,13 @@ export default function Example() {
           className="lg:hidden"
         >
           <div className="fixed inset-0 z-50" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-secondary px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <DialogPanel className="bg-deepBlue fixed inset-y-0 right-0 z-50 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Ignis Legal</span>
                 <img
                   alt=""
-                  src="https://utfs.io/f/V1WyRDrhdbmHWhJg2vTnphqXFHZNyriDaRL8KTg4MA0PE32c"
+                  src="https://utfs.io/f/V1WyRDrhdbmHy0p4DJsRcbA5TP8as2XCEUK0MSrZpfvheltn"
                   className="h-8 w-auto rounded-full"
                 />
               </a>
@@ -80,13 +80,13 @@ export default function Example() {
               </button>
             </div>
             <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y ">
+              <div className="-my-6 divide-y">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-primary"
+                      className="hover:bg-coolGray -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white"
                     >
                       {item.name}
                     </a>
@@ -113,34 +113,36 @@ export default function Example() {
               viewBox="0 0 100 100"
               preserveAspectRatio="none"
               aria-hidden="true"
-              className="absolute inset-y-0 right-8 hidden h-full w-80 translate-x-1/2 transform fill-slate-100 lg:block"
+              className="absolute inset-y-0 right-8 hidden h-full w-80 translate-x-1/2 transform fill-blue-950 lg:block"
             >
               <polygon points="0,0 90,0 50,100 0,100" />
             </svg>
 
             <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-                <h1 className="text-4xl font-serif font-bold tracking-tight text-gray-900 sm:text-6xl">
+                <h1 className="text-offWhite font-serif text-4xl font-bold tracking-tight sm:text-6xl">
                   Professional Websites Built for Legal Success
                 </h1>
-                <p className="mt-6 text-lg font-serif leading-8 text-gray-600">
+                <p className="text-offWhite mt-6 font-serif text-lg leading-8">
                   At{" "}
-                  <span className="font-serif text-secondary text-2xl font-bold italic">
+                  <span className="text-warmGold font-serif text-2xl font-bold italic">
                     Ignis Legal
                   </span>
                   , we focus on creating visually appealing and SEO-optimized
-                  websites for legal professionals. Let us help you transform your digital footprint and effectively communicate your expertise to a wider audience.
+                  websites for legal professionals. Let us help you transform
+                  your digital footprint and effectively communicate your
+                  expertise to a wider audience.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
                     href="#"
-                    className="rounded-md bg-tertiary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    className="bg-warmGold text-lightBlue hover:bg-deepBlue hover:border-warmGold focus-visible:outline-coolGray rounded-md px-3.5 py-2.5 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                   >
                     Get started
                   </a>
                   <a
                     href="#"
-                    className="text-sm font-semibold leading-6 text-gray-900"
+                    className="text-offWhite text-sm font-semibold leading-6"
                   >
                     Learn more <span aria-hidden="true">→</span>
                   </a>
