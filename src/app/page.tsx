@@ -7,7 +7,7 @@ import Footer from "./_components/footer";
 
 export default function HomePage() {
   return (
-    <main className="m-7">
+    <main className="m-2">
       <Hero />
       <Feature />
       {/* <Values /> */}
