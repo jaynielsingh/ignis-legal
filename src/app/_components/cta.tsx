@@ -1,136 +1,62 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
-export default function Example() {
+import { CheckCircleIcon } from '@heroicons/react/20/solid'
+
+const benefits = [
+  'Competitive salaries',
+  'Flexible work hours',
+  '30 days of paid vacation',
+  'Annual team retreats',
+  'Benefits for you and your family',
+  'A great work environment',
+]
+
+export default function CTA() {
   return (
-    <div className="relative capitalize font-serif bg-offWhite py-16">
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 top-0 hidden h-1/2 bg-offWhite lg:block"
-      />
-      <div className="mx-auto max-w-7xl bg-indigo-600 lg:bg-transparent lg:px-8">
-        <div className="lg:grid lg:grid-cols-12">
-          <div className="relative z-10 lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:bg-transparent lg:py-16">
-            <div
-              aria-hidden="true"
-              className="absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden"
+    <div className="bg-blue-950 py-24 sm:py-32">
+      <div className="relative isolate">
+        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
+            <img
+              alt=""
+              src="https://utfs.io/f/V1WyRDrhdbmHMM8L4nofSdRKaGIqmrgHyQ7JT8Pb6Ci90eEo"
+              className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm"
             />
-            <div className="mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-none lg:p-0">
-              <div className="aspect-h-6 aspect-w-10 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-w-1">
-                <img
-                  alt=""
-                  src="https://utfs.io/f/V1WyRDrhdbmHMM8L4nofSdRKaGIqmrgHyQ7JT8Pb6Ci90eEo"
-                  className="rounded-3xl object-cover object-center shadow-2xl"
-                />
+            <div className="w-full flex-auto">
+              <h2 className="text-3xl font-bold tracking-tight text-offWhite sm:text-4xl">Struggling with an outdated website that doesn’t reflect your expertise?</h2>
+              <p className="mt-6 text-lg leading-8 text-lightBlue">
+                Ignis Legal Web designs modern, responsive websites that showcase your skills and attract potential clients.
+              </p>
+              <ul
+                role="list"
+                className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-white sm:grid-cols-2"
+              >
+                {benefits.map((benefit) => (
+                  <li key={benefit} className="flex gap-x-3">
+                    <CheckCircleIcon aria-hidden="true" className="h-7 w-5 flex-none text-warmGold" />
+                    {benefit}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-10 flex">
+                <a href="#" className="text-sm font-semibold leading-6 text-warmGold">
+                  Contact Us<span aria-hidden="true">&rarr;</span>
+                </a>
               </div>
             </div>
           </div>
-
-          <div className="relative bg-deepBlue lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-10 lg:items-center lg:rounded-3xl">
-            <div
-              aria-hidden="true"
-              className="absolute inset-0 hidden overflow-hidden rounded-3xl lg:block"
-            >
-              <svg
-                fill="none"
-                width={404}
-                height={384}
-                viewBox="0 0 404 384"
-                aria-hidden="true"
-                className="absolute bottom-full left-full -translate-x-2/3 translate-y-1/3 transform xl:bottom-auto xl:top-0 xl:translate-y-0"
-              >
-                <defs>
-                  <pattern
-                    x={0}
-                    y={0}
-                    id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d"
-                    width={20}
-                    height={20}
-                    patternUnits="userSpaceOnUse"
-                  >
-                    <rect
-                      x={0}
-                      y={0}
-                      fill="currentColor"
-                      width={4}
-                      height={4}
-                      className="text-indigo-500"
-                    />
-                  </pattern>
-                </defs>
-                <rect
-                  fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"
-                  width={404}
-                  height={384}
-                />
-              </svg>
-              <svg
-                fill="none"
-                width={404}
-                height={384}
-                viewBox="0 0 404 384"
-                aria-hidden="true"
-                className="absolute top-full -translate-x-1/3 -translate-y-1/3 transform xl:-translate-y-1/2"
-              >
-                <defs>
-                  <pattern
-                    x={0}
-                    y={0}
-                    id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d"
-                    width={20}
-                    height={20}
-                    patternUnits="userSpaceOnUse"
-                  >
-                    <rect
-                      x={0}
-                      y={0}
-                      fill="currentColor"
-                      width={4}
-                      height={4}
-                      className="text-indigo-500"
-                    />
-                  </pattern>
-                </defs>
-                <rect
-                  fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"
-                  width={404}
-                  height={384}
-                />
-              </svg>
-            </div>
-            <div className="relative mx-auto max-w-md space-y-6 px-6 py-12 sm:max-w-3xl sm:py-16 lg:col-span-6 lg:col-start-4 lg:max-w-none lg:p-0">
-              <h2
-                id="join-heading"
-                className="text-3xl font-bold tracking-tight text-offWhite"
-              >
-                Struggling with an outdated website that doesn’t reflect your
-                expertise?
-              </h2>
-              <p className="text-lg text-offWhite">
-                Legal Web designs modern, responsive websites that showcase your
-                skills and attract potential clients.
-              </p>
-              <a
-                href="#"
-                className="block w-full rounded-md border border-transparent bg-warmGold px-5 py-3 text-center text-base font-medium text-offWhite shadow-md hover:bg-lightBlue hover:text-coolGray sm:inline-block sm:w-auto"
-              >
-                Inquire about a project
-              </a>
-            </div>
-          </div>
+        </div>
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 -top-16 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
+        >
+          <div
+            style={{
+              clipPath:
+                'polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)',
+            }}
+            className="aspect-[1318/752] w-[82.375rem] flex-none bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-25"
+          />
         </div>
       </div>
     </div>
-  );
+  )
 }

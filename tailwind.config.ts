@@ -11,19 +11,17 @@ export default {
       colors: {
         transparent: "transparent",
         current: "currentColor",
-        deepBlue: '#002B5B',
-        coolGray: '#4A4A4A',
+        deepBlue: "#002B5B",
+        coolGray: "#4A4A4A",
         warmGold: "#C9A46A",
         lightBlue: "#E8F0FE",
-        offWhite: "#F7F7F7"
+        offWhite: "#F7F7F7",
         // primary: "#619E91",
         // secondary: "#91619E",
         // tertiary: "#9E9161",
-      
       },
     },
-
   },
 
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 } satisfies Config;
