@@ -37,7 +37,7 @@ export default function Example() {
             Elevate your digital footprint with next gen technology.
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Say goodbye to outdated wordpress websites and say hello to Ignis Legal.  We leverage the latest web technologies to help you build your next project.
+            Say goodbye to outdated boring websites and say hello to Ignis Legal.  We leverage the latest web technologies to help you build your next project.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
