@@ -50,7 +50,7 @@ const values = [
 
 function Values() {
   return (
-    <div className="relative isolate mx-auto mt-20 py-6 max-w-7xl px-6 lg:px-8 bg-deepBlue">
+    <div className="relative isolate mx-auto py-6 max-w-7xl px-6 lg:px-8 bg-deepBlue">
       <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
         <img
           alt=""

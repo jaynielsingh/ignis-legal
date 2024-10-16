@@ -5,6 +5,7 @@ import Footer from "./_components/footer";
 import CTA from "./_components/cta";
 import Contact from "./_components/contact";
 import Pricing from "./_components/pricing";
+import Values from "./_components/values";
 // import Values from "./_components/values";
 
 export default function HomePage() {
@@ -12,9 +13,9 @@ export default function HomePage() {
     <main className="m-2">
       <Hero />
       <Feature />
-      {/* <Values /> */}
       <CTA />
-      <Pricing />
+      {/* <Pricing /> */}
+      <Values />
       <Contact />
       <Footer />
     </main>

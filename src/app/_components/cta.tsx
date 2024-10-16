@@ -1,12 +1,12 @@
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 
 const benefits = [
-  'Competitive salaries',
-  'Flexible work hours',
-  '30 days of paid vacation',
-  'Annual team retreats',
-  'Benefits for you and your family',
-  'A great work environment',
+  'Responsive websites',
+  'Modern design',
+  'Domain & hosting',
+  'Digital marketing',
+  'Professional email address',
+  'Website maintenance',
 ]
 
 export default function CTA() {
